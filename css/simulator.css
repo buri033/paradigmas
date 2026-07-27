@@ -1,0 +1,62 @@
+/* Estilos para Simulador de Préstamos - DuckBank */
+@import url('variables.css');
+
+.simulator-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 992px) {
+  .simulator-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.range-slider-group {
+  margin-bottom: 24px;
+}
+
+.range-slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.range-slider-header label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.range-value-display {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.range-input {
+  width: 100%;
+  accent-color: var(--primary);
+  height: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.sim-result-box {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: white;
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.monthly-fee-display {
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin: 12px 0 24px;
+}

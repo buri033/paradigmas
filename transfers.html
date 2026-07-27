@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DuckBank - Transferencias</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/transfers.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="brand-logo">🦆</div>
+        <div class="brand-name">Duck<span>Bank</span></div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">Menú Principal</div>
+        <a href="index.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Dashboard
+        </a>
+        <a href="savings.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+          Cuenta de Ahorros
+        </a>
+        <a href="transfers.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
+          Transferencias
+        </a>
+        <a href="cards.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          Tarjetas de Crédito
+        </a>
+        <a href="loans.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Créditos
+        </a>
+        <a href="simulator.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/></svg>
+          Simulador Préstamos
+        </a>
+        <a href="investments.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          Inversiones
+        </a>
+        <a href="applications.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+          Solicitud Productos
+        </a>
+
+        <div class="nav-section-label">Administración</div>
+        <a href="admin.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Panel del Admin
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-card-mini">
+          <div class="user-avatar">JD</div>
+          <div class="user-info">
+            <div class="user-name">Juan Doe</div>
+            <div class="user-role">Cuenta Prime</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+      <header class="top-header">
+        <div style="font-weight: 700; color: var(--primary-dark);">Banca en Línea • DuckBank</div>
+      </header>
+
+      <main class="page-content">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Transferencias de Dinero</h1>
+            <p class="page-subtitle">Transfiere a cuentas DuckBank o a cualquier banco nacional sin costo.</p>
+          </div>
+        </div>
+
+        <div class="transfers-layout">
+          <div>
+            <div class="card">
+              <div class="card-title">Contactos Frecuentes</div>
+              <div class="contact-picker">
+                <div class="contact-avatar-item" data-name="María Silva" data-bank="DuckBank" data-rut="18.234.567-9" data-account="440212">
+                  <div class="contact-avatar">MS</div>
+                  <span class="contact-name">María S.</span>
+                </div>
+                <div class="contact-avatar-item" data-name="Carlos Gómez" data-bank="Banco Estado" data-rut="15.890.123-K" data-account="1290341">
+                  <div class="contact-avatar">CG</div>
+                  <span class="contact-name">Carlos G.</span>
+                </div>
+                <div class="contact-avatar-item" data-name="Ana Torres" data-bank="Banco Santander" data-rut="19.456.789-1" data-account="9823100">
+                  <div class="contact-avatar">AT</div>
+                  <span class="contact-name">Ana T.</span>
+                </div>
+                <div class="contact-avatar-item" data-name="Rodrigo Morales" data-bank="DuckBank" data-rut="12.345.678-5" data-account="551209">
+                  <div class="contact-avatar">RM</div>
+                  <span class="contact-name">Rodrigo M.</span>
+                </div>
+              </div>
+
+              <form id="transferForm">
+                <div class="form-group">
+                  <label class="form-label">Cuenta de Origen</label>
+                  <select class="form-control">
+                    <option>Cuenta Vista (Saldo: $4.850.900)</option>
+                    <option>Cuenta Ahorro Duck (Saldo: $1.200.000)</option>
+                  </select>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                  <div class="form-group">
+                    <label class="form-label" for="destName">Nombre del Destinatario</label>
+                    <input type="text" id="destName" class="form-control" placeholder="Ej: Pedro Soto" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="destRut">RUT / Identificación</label>
+                    <input type="text" id="destRut" class="form-control" placeholder="12.345.678-9" required>
+                  </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                  <div class="form-group">
+                    <label class="form-label" for="destBank">Banco Destino</label>
+                    <select id="destBank" class="form-control">
+                      <option>DuckBank (Misma entidad)</option>
+                      <option>Banco Estado</option>
+                      <option>Banco Santander</option>
+                      <option>Banco de Chile</option>
+                      <option>BCI</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="destAccount">Número de Cuenta</label>
+                    <input type="text" id="destAccount" class="form-control" placeholder="N° de cuenta" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="transferAmount">Monto a Transferir</label>
+                  <div class="amount-input-wrapper">
+                    <span class="currency-symbol">$</span>
+                    <input type="number" id="transferAmount" class="form-control amount-input" placeholder="0" required min="100">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="comment">Mensaje / Comentario (Opcional)</label>
+                  <input type="text" id="comment" class="form-control" placeholder="Ej: Pago de arriendo">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full" style="padding: 14px; font-size: 16px;">
+                  Confirmar y Transferir 🚀
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Historial de Destinatarios -->
+          <div>
+            <div class="card">
+              <div class="card-title">Límites de Transferencia</div>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 13px; color: var(--text-muted);">
+                <li style="display: flex; justify-content: space-between;">
+                  <span>Nuevos Destinatarios (24h):</span>
+                  <strong style="color: var(--text-main);">$250.000</strong>
+                </li>
+                <li style="display: flex; justify-content: space-between;">
+                  <span>Límite diario:</span>
+                  <strong style="color: var(--text-main);">$5.000.000</strong>
+                </li>
+                <li style="display: flex; justify-content: space-between;">
+                  <span>Costo por transferencia:</span>
+                  <strong style="color: var(--success);">$0 CLP</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Modal de Éxito -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-card">
+      <div style="text-align: center; margin-bottom: 20px;">
+        <div style="width: 60px; height: 60px; background: var(--success-light); color: var(--success); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; margin: 0 auto 12px;">✓</div>
+        <h2 style="font-size: 20px; font-weight: 800; color: var(--primary-dark);">¡Transferencia Exitosa!</h2>
+        <p style="font-size: 13px; color: var(--text-muted);">Se ha procesado tu envío correctamente.</p>
+      </div>
+
+      <div style="background: var(--bg-body); padding: 16px; border-radius: var(--radius-md); font-size: 13px; display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px;">
+        <div style="display: flex; justify-content: space-between;">
+          <span style="color: var(--text-muted);">Monto:</span>
+          <strong id="receiptAmount" style="color: var(--primary-dark); font-size: 16px;">$0</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span style="color: var(--text-muted);">Destinatario:</span>
+          <strong id="receiptDest">-</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span style="color: var(--text-muted);">Fecha y hora:</span>
+          <span id="receiptDate" style="color: var(--text-main);">-</span>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span style="color: var(--text-muted);">Comprobante:</span>
+          <span style="color: var(--primary); font-weight: 700;">#DUCK-98231</span>
+        </div>
+      </div>
+
+      <button class="btn btn-primary btn-full" id="closeModalBtn">Aceptar y Cerrar</button>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/transfers.js"></script>
+</body>
+</html>

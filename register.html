@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DuckBank - Crear Cuenta</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-body">
+  <div class="auth-wrapper">
+    <div class="auth-brand">
+      <div class="auth-logo">🦆</div>
+      <h1 class="auth-brand-name">Duck<span>Bank</span></h1>
+    </div>
+
+    <div class="auth-card">
+      <h2 class="auth-title">Abre tu cuenta digital</h2>
+      <p class="auth-subtitle">Únete a DuckBank en menos de 2 minutos sin papeleos.</p>
+
+      <form id="registerForm">
+        <div class="form-group">
+          <label class="form-label" for="fullName">Nombre Completo</label>
+          <input type="text" id="fullName" class="form-control" placeholder="Juan Pérez" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="regEmail">Correo Electrónico</label>
+          <input type="email" id="regEmail" class="form-control" placeholder="juan@correo.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="regPassword">Crea tu Contraseña</label>
+          <input type="password" id="regPassword" class="form-control" placeholder="Mínimo 8 caracteres" required>
+        </div>
+
+        <div class="remember-row">
+          <label style="font-size: 12px;">
+            <input type="checkbox" id="terms" required> Acepto los <a href="#" style="color: var(--primary);">términos de servicio</a> y políticas de privacidad.
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">Crear mi Cuenta</button>
+      </form>
+
+      <div class="auth-footer-text">
+        ¿Ya tienes una cuenta? <a href="login.html">Inicia Sesión</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+/* Variables Globales de Diseño - DuckBank */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Paleta de Azules Claros y Acentos */
+  --primary: #0284c7;           /* Sky Blue Principal */
+  --primary-hover: #0369a1;     /* Sky Blue Oscuro para Hover */
+  --primary-dark: #0c4a6e;      /* Azul Marino Oscuro */
+  --primary-light: #e0f2fe;    /* Azul Claro Suave */
+  --primary-subtle: #f0f9ff;   /* Fondo con Tinte Azul */
+  --accent-cyan: #38bdf8;      /* Cian Brillante */
+  --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+  --header-gradient: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+
+  /* Neutrales */
+  --bg-body: #f4f8fb;
+  --bg-sidebar: #ffffff;
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+
+  /* Estados */
+  --success: #10b981;
+  --success-light: #d1fae5;
+  --warning: #f59e0b;
+  --warning-light: #fef3c7;
+  --danger: #ef4444;
+  --danger-light: #fee2e2;
+
+  /* Elevaciones y Sombras */
+  --shadow-sm: 0 2px 8px rgba(2, 132, 199, 0.05);
+  --shadow-md: 0 8px 24px -4px rgba(2, 132, 199, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.03);
+  --shadow-lg: 0 20px 40px -8px rgba(2, 132, 199, 0.15);
+
+  /* Bordes y Esquinas */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  /* Tipografía */
+  --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}

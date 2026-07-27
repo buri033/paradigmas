@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DuckBank - Tarjetas de Crédito</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/cards.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="brand-logo">🦆</div>
+        <div class="brand-name">Duck<span>Bank</span></div>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">Menú Principal</div>
+        <a href="index.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Dashboard
+        </a>
+        <a href="savings.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+          Cuenta de Ahorros
+        </a>
+        <a href="transfers.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
+          Transferencias
+        </a>
+        <a href="cards.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          Tarjetas de Crédito
+        </a>
+        <a href="loans.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Créditos
+        </a>
+        <a href="simulator.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/></svg>
+          Simulador Préstamos
+        </a>
+        <a href="investments.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          Inversiones
+        </a>
+        <a href="applications.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+          Solicitud Productos
+        </a>
+        <div class="nav-section-label">Administración</div>
+        <a href="admin.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Panel del Admin
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="user-card-mini">
+          <div class="user-avatar">JD</div>
+          <div class="user-info">
+            <div class="user-name">Juan Doe</div>
+            <div class="user-role">Cuenta Prime</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      <header class="top-header">
+        <div style="font-weight: 700; color: var(--primary-dark);">Banca en Línea • DuckBank</div>
+      </header>
+
+      <main class="page-content">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Gestión de Tarjetas de Crédito</h1>
+            <p class="page-subtitle">Revisa tus tarjetas activas, cupos disponibles y fechas de pago.</p>
+          </div>
+          <a href="applications.html" class="btn btn-primary">+ Solicitar Nueva Tarjeta</a>
+        </div>
+
+        <!-- Tarjetas Planas -->
+        <div class="cards-grid">
+          <!-- Tarjeta 1 -->
+          <div class="credit-card-flat">
+            <div class="card-top">
+              <span style="font-weight: 700; font-size: 14px; opacity: 0.9;">Duck Visa Signature</span>
+              <div class="chip-icon"></div>
+            </div>
+            <div class="card-number-flat">4912 •••• •••• 8821</div>
+            <div class="card-bottom-info">
+              <div>
+                <div style="font-size: 10px; opacity: 0.8; text-transform: uppercase;">Titular</div>
+                <div class="card-holder-name">JUAN DOE</div>
+              </div>
+              <div>
+                <div style="font-size: 10px; opacity: 0.8;">VENCE</div>
+                <div style="font-weight: 700; font-size: 13px;">08/29</div>
+              </div>
+              <div class="card-brand-logo">VISA</div>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div class="credit-card-flat gold">
+            <div class="card-top">
+              <span style="font-weight: 700; font-size: 14px; opacity: 0.9;">Duck Mastercard Black</span>
+              <div class="chip-icon"></div>
+            </div>
+            <div class="card-number-flat">5410 •••• •••• 3409</div>
+            <div class="card-bottom-info">
+              <div>
+                <div style="font-size: 10px; opacity: 0.8; text-transform: uppercase;">Titular</div>
+                <div class="card-holder-name">JUAN DOE</div>
+              </div>
+              <div>
+                <div style="font-size: 10px; opacity: 0.8;">VENCE</div>
+                <div style="font-weight: 700; font-size: 13px;">11/28</div>
+              </div>
+              <div class="card-brand-logo">Mastercard</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detalle de Tarjeta Seleccionada -->
+        <div class="card-detail-box">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h3 style="font-size: 18px; font-weight: 800; color: var(--primary-dark);">Detalles de Duck Visa Signature</h3>
+            <div style="display: flex; gap: 10px;">
+              <button class="btn btn-outline" id="toggleCvvBtn">Ver CVV</button>
+              <button class="btn btn-outline" id="lockBtn">Bloquear Tarjeta</button>
+              <button class="btn btn-primary" id="payCardBtn">Pagar Tarjeta</button>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; background: var(--bg-body); padding: 20px; border-radius: var(--radius-md);">
+            <div>
+              <span style="font-size: 12px; color: var(--text-muted); font-weight: 700;">DEUDA TOTAL</span>
+              <h4 style="font-size: 22px; font-weight: 800; color: var(--primary-dark); margin-top: 4px;">$340.000</h4>
+            </div>
+            <div>
+              <span style="font-size: 12px; color: var(--text-muted); font-weight: 700;">CUPO DISPONIBLE</span>
+              <h4 style="font-size: 22px; font-weight: 800; color: var(--success); margin-top: 4px;">$2.160.000</h4>
+            </div>
+            <div>
+              <span style="font-size: 12px; color: var(--text-muted); font-weight: 700;">FECHA DE CORTE</span>
+              <h4 style="font-size: 18px; font-weight: 700; color: var(--text-main); margin-top: 4px;">05 de Agosto</h4>
+            </div>
+            <div>
+              <span style="font-size: 12px; color: var(--text-muted); font-weight: 700;">CÓDIGO SEGURIDAD (CVV)</span>
+              <h4 style="font-size: 18px; font-weight: 800; color: var(--primary); margin-top: 4px;" id="cvvText">•••</h4>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/cards.js"></script>
+</body>
+</html>
