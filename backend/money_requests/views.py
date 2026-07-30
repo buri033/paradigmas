@@ -51,7 +51,7 @@ class CreateMoneyRequestView(APIView):
         Notification.objects.create(
             user=target_profile,
             title='Nueva solicitud de dinero',
-            message=f'{request.user.get_full_name() or request.user.email} te ha solicitado ${serializer.validated_data["amount"]:,} CLP.',
+            message=f'{request.user.get_full_name() or request.user.email} te ha solicitado ${serializer.validated_data["amount"]:,} COP.',
             type='info',
         )
 
@@ -102,7 +102,7 @@ class AcceptMoneyRequestView(APIView):
         Notification.objects.create(
             user=money_request.requester,
             title='Solicitud aceptada',
-            message=f'{request.user.get_full_name() or request.user.email} aceptó tu solicitud de ${money_request.amount:,} CLP.',
+            message=f'{request.user.get_full_name() or request.user.email} aceptó tu solicitud de ${money_request.amount:,} COP.',
             type='success',
         )
 
@@ -127,7 +127,7 @@ class RejectMoneyRequestView(APIView):
         Notification.objects.create(
             user=money_request.requester,
             title='Solicitud rechazada',
-            message=f'{request.user.get_full_name() or request.user.email} rechazó tu solicitud de ${money_request.amount:,} CLP.',
+            message=f'{request.user.get_full_name() or request.user.email} rechazó tu solicitud de ${money_request.amount:,} COP.',
             type='warning',
         )
 

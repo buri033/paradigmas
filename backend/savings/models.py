@@ -13,7 +13,7 @@ class SavingsBox(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.name} - ${self.balance:,} CLP"
+        return f"{self.name} - ${self.balance:,} COP"
 
     class Meta:
         verbose_name = 'Cajita'

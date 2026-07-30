@@ -140,7 +140,7 @@ class PayCardView(APIView):
 
         if amount > card.used_amount:
             return Response(
-                {'detail': f'El monto excede la deuda de ${card.used_amount:,} CLP.'},
+                {'detail': f'El monto excede la deuda de ${card.used_amount:,} COP.'},
                 status=status.HTTP_400_BAD_REQUEST
             )
 

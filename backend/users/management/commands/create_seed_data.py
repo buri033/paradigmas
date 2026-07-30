@@ -90,7 +90,7 @@ class Command(BaseCommand):
             Notification.objects.create(
                 user=demo_user.profile,
                 title='Pago recibido',
-                message='Has recibido $250,000 CLP de María González.',
+                message='Has recibido $250,000 COP de María González.',
                 type='success',
             )
 

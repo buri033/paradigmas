@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
                 ('account_number', models.CharField(max_length=20, unique=True)),
                 ('alias', models.CharField(blank=True, max_length=50, null=True)),
                 ('balance', models.BigIntegerField(default=0)),
-                ('currency', models.CharField(default='CLP', max_length=3)),
+                ('currency', models.CharField(default='COP', max_length=3)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='accounts', to='users.profile')),

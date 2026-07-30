@@ -21,7 +21,7 @@ class MoneyRequest(models.Model):
     responded_at = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):
-        return f"{self.requester} → {self.target}: ${self.amount:,} CLP ({self.get_status_display()})"
+        return f"{self.requester} → {self.target}: ${self.amount:,} COP ({self.get_status_display()})"
 
     class Meta:
         verbose_name = 'Solicitud de Dinero'

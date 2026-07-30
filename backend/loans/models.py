@@ -25,7 +25,7 @@ class Loan(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"{self.loan_name} - ${self.remaining:,} CLP pendiente"
+        return f"{self.loan_name} - ${self.remaining:,} COP pendiente"
 
     class Meta:
         verbose_name = 'Crédito'

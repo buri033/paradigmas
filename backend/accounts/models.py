@@ -17,7 +17,7 @@ class Account(models.Model):
     account_number = models.CharField(max_length=20, unique=True)
     alias = models.CharField(max_length=50, null=True, blank=True)
     balance = models.BigIntegerField(default=0)
-    currency = models.CharField(max_length=3, default='CLP')
+    currency = models.CharField(max_length=3, default='COP')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
