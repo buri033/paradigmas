@@ -29,3 +29,6 @@ desktop.ini
 
 # Node (if any frontend tooling is added)
 node_modules/
+
+# Study guide (local only)
+ESTUDIO_SUSTENTACION.txt
