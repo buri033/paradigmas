@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DuckBank - Cuenta de Ahorros</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/savings.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="brand-logo">🦆</div>
+        <div class="brand-name">Duck<span>Bank</span></div>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">Menú Principal</div>
+        <a href="index.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Dashboard
+        </a>
+        <a href="savings.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+          Cuenta de Ahorros
+        </a>
+        <a href="transfers.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
+          Transferencias
+        </a>
+        <a href="cards.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          Tarjetas de Crédito
+        </a>
+        <a href="loans.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Créditos
+        </a>
+        <a href="simulator.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/></svg>
+          Simulador Préstamos
+        </a>
+        <a href="investments.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          Inversiones
+        </a>
+        <a href="applications.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+          Solicitud Productos
+        </a>
+        <div class="nav-section-label">Administración</div>
+        <a href="admin.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Panel del Admin
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="user-card-mini">
+          <div class="user-avatar">JD</div>
+          <div class="user-info">
+            <div class="user-name">Juan Doe</div>
+            <div class="user-role">Cuenta Prime</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      <header class="top-header">
+        <div style="font-weight: 700; color: var(--primary-dark);">Banca en Línea • DuckBank</div>
+      </header>
+
+      <main class="page-content">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Cuenta de Ahorros Duck</h1>
+            <p class="page-subtitle">Gana hasta 5.2% de interés anual abonado mensualmente.</p>
+          </div>
+        </div>
+
+        <div class="savings-header-card">
+          <div>
+            <span style="font-size: 13px; color: var(--text-muted); font-weight: 700;">SALDO TOTAL AHORRADO</span>
+            <h2 style="font-size: 36px; font-weight: 800; color: var(--primary-dark); margin-top: 4px;">$2.450.000 CLP</h2>
+            <span class="badge badge-success" style="margin-top: 8px;">+ $12.400 abonados este mes</span>
+          </div>
+          <div>
+            <a href="transfers.html" class="btn btn-primary">+ Abonar Ahorro</a>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px;">
+          <!-- Movimientos de Ahorro -->
+          <div class="card">
+            <div class="card-title">Historial de Intereses y Aportes</div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Fecha</th>
+                    <th>Concepto</th>
+                    <th>Tipo</th>
+                    <th>Monto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01/07/2026</td>
+                    <td>Abono Interés Mensual (5.2% E.A)</td>
+                    <td><span class="badge badge-success">Interés</span></td>
+                    <td style="color: var(--success); font-weight: 700;">+$12.400</td>
+                  </tr>
+                  <tr>
+                    <td>15/06/2026</td>
+                    <td>Transferencia desde Cuenta Vista</td>
+                    <td><span class="badge badge-primary">Aporte</span></td>
+                    <td style="color: var(--primary-dark); font-weight: 700;">+$300.000</td>
+                  </tr>
+                  <tr>
+                    <td>01/06/2026</td>
+                    <td>Abono Interés Mensual (5.2% E.A)</td>
+                    <td><span class="badge badge-success">Interés</span></td>
+                    <td style="color: var(--success); font-weight: 700;">+$10.850</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Metas de Ahorro -->
+          <div>
+            <div class="card">
+              <div class="card-title">Mis Metas de Ahorro 🎯</div>
+
+              <div class="goal-card">
+                <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 14px;">
+                  <span>🚗 Auto Nuevo</span>
+                  <span style="color: var(--primary);">$1.500.000 / $3.000.000</span>
+                </div>
+                <div class="goal-progress-bar">
+                  <div class="goal-progress-fill" style="width: 50%;"></div>
+                </div>
+                <div style="font-size: 12px; color: var(--text-muted);">50% completado</div>
+              </div>
+
+              <div class="goal-card">
+                <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 14px;">
+                  <span>🏖️ Vacaciones Cancún</span>
+                  <span style="color: var(--primary);">$950.000 / $1.000.000</span>
+                </div>
+                <div class="goal-progress-bar">
+                  <div class="goal-progress-fill" style="width: 95%;"></div>
+                </div>
+                <div style="font-size: 12px; color: var(--text-muted);">95% completado</div>
+              </div>
+
+              <!-- Formulario rápida nueva meta -->
+              <form id="addGoalForm" style="margin-top: 20px; border-top: 1px solid var(--card-border); padding-top: 16px;">
+                <div class="form-group">
+                  <label class="form-label">Nueva Meta</label>
+                  <input type="text" id="goalTitle" class="form-control" placeholder="Ej: Fondo de Emergencia" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Monto Objetivo</label>
+                  <input type="number" id="goalTarget" class="form-control" placeholder="$500.000" required>
+                </div>
+                <button type="submit" class="btn btn-secondary btn-full">+ Crear Meta</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/savings.js"></script>
+</body>
+</html>

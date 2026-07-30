@@ -1,0 +1,35 @@
+/* Estilos para Cuenta de Ahorros - DuckBank */
+@import url('variables.css');
+
+.savings-header-card {
+  background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 100%);
+  border: 1px solid #bae6fd;
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.goal-card {
+  background: white;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.goal-progress-bar {
+  height: 8px;
+  background: var(--primary-light);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+.goal-progress-fill {
+  height: 100%;
+  background: var(--accent-gradient);
+  border-radius: 4px;
+}

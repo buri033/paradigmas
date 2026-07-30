@@ -1,0 +1,23 @@
+/* Estilos para Créditos - DuckBank */
+@import url('variables.css');
+
+.loan-summary-card {
+  background: white;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--card-border);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.loan-progress {
+  height: 10px;
+  background: var(--primary-light);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 16px 0;
+}
+
+.loan-progress-inner {
+  height: 100%;
+  background: var(--accent-gradient);
+}

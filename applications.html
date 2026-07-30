@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DuckBank - Solicitud de Productos</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/applications.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="brand-logo">🦆</div>
+        <div class="brand-name">Duck<span>Bank</span></div>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">Menú Principal</div>
+        <a href="index.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Dashboard
+        </a>
+        <a href="savings.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+          Cuenta de Ahorros
+        </a>
+        <a href="transfers.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
+          Transferencias
+        </a>
+        <a href="cards.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          Tarjetas de Crédito
+        </a>
+        <a href="loans.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Créditos
+        </a>
+        <a href="simulator.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/></svg>
+          Simulador Préstamos
+        </a>
+        <a href="investments.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          Inversiones
+        </a>
+        <a href="applications.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+          Solicitud Productos
+        </a>
+        <div class="nav-section-label">Administración</div>
+        <a href="admin.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Panel del Admin
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="user-card-mini">
+          <div class="user-avatar">JD</div>
+          <div class="user-info">
+            <div class="user-name">Juan Doe</div>
+            <div class="user-role">Cuenta Prime</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+      <header class="top-header">
+        <div style="font-weight: 700; color: var(--primary-dark);">Banca en Línea • DuckBank</div>
+      </header>
+
+      <main class="page-content">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Solicitud de Nuevos Productos</h1>
+            <p class="page-subtitle">Pide tarjetas adicionales, aumento de cupo o préstamos con aprobación 100% online.</p>
+          </div>
+        </div>
+
+        <div class="card-title">1. Selecciona el Producto que Deseas</div>
+        <div class="product-catalog-grid">
+          <div class="product-option-card selected" data-product="Tarjeta de Crédito Duck Black">
+            <div class="product-icon-box">💳</div>
+            <h3 style="font-size: 16px; font-weight: 800; color: var(--primary-dark);">Tarjeta Duck Mastercard Black</h3>
+            <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Acceso a VIP Lounges en aeropuertos y 3x puntos Duck.</p>
+          </div>
+
+          <div class="product-option-card" data-product="Aumento de Cupo Crédito">
+            <div class="product-icon-box">📈</div>
+            <h3 style="font-size: 16px; font-weight: 800; color: var(--primary-dark);">Aumento de Cupo de Tarjeta</h3>
+            <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Incremente su cupo disponible hasta en un 50% extra.</p>
+          </div>
+
+          <div class="product-option-card" data-product="Crédito Hipotecario Duck">
+            <div class="product-icon-box">🏠</div>
+            <h3 style="font-size: 16px; font-weight: 800; color: var(--primary-dark);">Crédito Hipotecario Tu Hogar</h3>
+            <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Financiamiento hasta 90% del inmueble a 30 años plazo.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">2. Completa tus Datos para la Evaluación</div>
+          <form id="productAppForm">
+            <div style="font-size: 14px; font-weight: 700; color: var(--primary); margin-bottom: 16px;">
+              Producto Seleccionado: <span id="selectedProductTitle" style="color: var(--primary-dark);">Tarjeta Duck Mastercard Black</span>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label" for="monthlyIncome">Ingreso Líquido Mensual (CLP)</label>
+                <input type="number" id="monthlyIncome" class="form-control" placeholder="$1.200.000" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="employmentType">Tipo de Contrato / Actividad</label>
+                <select id="employmentType" class="form-control">
+                  <option>Empleado Indefinido</option>
+                  <option>Independiente / Honorarios</option>
+                  <option>Empresario / Pyme</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="address">Dirección Particular</label>
+              <input type="text" id="address" class="form-control" placeholder="Av. Providencia 1234, Santiago" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" style="padding: 14px; font-size: 16px;">Enviar Solicitud Digital 📩</button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/applications.js"></script>
+</body>
+</html>
